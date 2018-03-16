@@ -50,8 +50,12 @@ module.exports.locationsCreate = function (req, res) {
 };
 
 module.exports.locationsListByDistance = function(req, res) {
-	var lng = parseFloat(req.query.lng);
-	var lat = parseFloat(req.query.lat);
+	/*var lng = parseFloat(req.query.lng);
+	var lat = parseFloat(req.query.lat);*/
+
+	// Hardcoded for now.
+	var lng = parseFloat('-0.7992599');
+    var lat = parseFloat('51.378091');
 
 	var point = {
 		type: "Point",

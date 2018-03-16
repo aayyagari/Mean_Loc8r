@@ -4,6 +4,7 @@ var dbURI = 'mongodb://localhost/Loc8r';
 var gracefulShutdown;
 
 require('./locations');
+require('./users');
 
 mongoose.connect(dbURI);
 
